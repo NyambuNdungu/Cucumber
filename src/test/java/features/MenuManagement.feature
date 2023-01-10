@@ -1,5 +1,6 @@
 Feature: Menu Management
 
+
   @SmokeTest
   Scenario: Add a menu item
     Given i have a menu item with name "cucumber" and price 20
