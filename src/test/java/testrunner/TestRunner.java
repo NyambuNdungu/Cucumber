@@ -8,8 +8,11 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = {"src/test/java/features"},
-        glue = {"stepdefinitions"},
-        tags = "@RegularTest",
-        plugin = {"pretty"})
+        glue = {"stepdefinitions",},
+        plugin = {"pretty",
+        "html:target/SystemTestReports/html"},
+        dryRun = false,
+        monochrome = false
+)
 public class TestRunner {
 }

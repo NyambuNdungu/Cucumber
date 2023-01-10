@@ -7,7 +7,7 @@ public class RestaurantMenu implements RestaurantMenuI {
     ArrayList<RestaurantMenuItem> MenuItems = new ArrayList<RestaurantMenuItem>();
 
     @Override
-    public boolean addMenuItem(RestaurantMenuItem newMenuItem) throws IllegalArgumentException {
+    public boolean addMenuItem(RestaurantMenuItem newMenuItem){
         return MenuItems.add(newMenuItem);
 
     }
