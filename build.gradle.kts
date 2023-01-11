@@ -15,10 +15,12 @@ dependencies {
     testImplementation("junit:junit:4.13.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
 
+    //selenium
+    testImplementation("org.seleniumhq.selenium:selenium-java:4.7.2")
+    testImplementation ("org.seleniumhq.selenium:selenium-chrome-driver:4.7.2")
+
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation(platform("io.cucumber:cucumber-bom:7.10.1"))
-
-
 
     testImplementation("io.cucumber:cucumber-java")
     testImplementation("io.cucumber:cucumber-junit-platform-engine")
@@ -26,6 +28,8 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
     testImplementation("io.cucumber:cucumber-java:7.10.1")
     testImplementation("io.cucumber:cucumber-junit:7.10.1")
+
+
 }
 
 tasks.getByName<Test>("test") {

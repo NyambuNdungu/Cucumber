@@ -12,7 +12,8 @@ import org.junit.runner.RunWith;
         plugin = {"pretty",
         "html:target/SystemTestReports/html"},
         dryRun = false,
-        monochrome = false
+        monochrome = false,
+        tags = "@ScenarioOutlineExample"
 )
 public class TestRunner {
 }
